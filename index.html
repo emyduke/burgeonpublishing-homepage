@@ -57,22 +57,22 @@
                                                         <img src="static/store/logo/logo.png" />
                                                 </a>
                                         </div>
-                                        <div class="nav__search d-none d-md-flex">
-                                                <form method="POST" action="#" class="search-form">
+                                        <div class="nav__search d-none d-md-flex" >
+                                                <form method="POST" action="#" class="search-form" >
                                                         <input type="hidden" name="csrfmiddlewaretoken"
                                                                 value="e3Sstgafc33l8GECPd2y0T3VrGN7jlKyjkworPiBUN1mLF1jJrnGasK42XGrRjRt">
                                                         <div class="dropdown dropdown-search mb-4">
-                                                                <div class="input-group">
+                                                                <div class="input-group" style="background-color: #EAEAEA !important;" >
                                                                         <input type="search" name="q"
                                                                                 class="form-control qInput"
                                                                                 id="searchInput"
                                                                                 onkeyup="filterFunction()"
                                                                                 autocomplete="off"
-                                                                                placeholder="Search here">
+                                                                                placeholder="Search title,author, category..">
                                                                         <label class="input-group-append">
                                                                                 <button type="submit"
                                                                                         class="btn btn--success search-button"><i
-                                                                                                class="fa fa-search"></i></button>
+                                                                                                class=""></i>Search</button>
                                                                         </label>
                                                                 </div>
                                                                 <div id="searchDropdown"
@@ -87,21 +87,32 @@
                                                 </form>
                                         </div>
                                         <div class="cart__btn d-none d-lg-flex">
-                                                <a href="wishlist/index.html" class="menu-item text-center">
+                                                <div>
+                                                        <div class="login">
+                                                                <a href="account/login/index.html"
+                                                                        class="menu-item">Login</a> or
+                                                                        <a href="account/signup/index.html"
+                                                                        class="menu-item">Register</a>
+                                                        </div>
+                                                        
+                                                </div>
+                                                <!-- <a href="wishlist/index.html" class="menu-item text-center">
                                                         <img src="static/store/logo/wishlist.png"
                                                                 style="max-width: 26px;" alt="">
                                                         <span class="d-block text-muted"
                                                                 style="font-size: x-small;">Wishlist</span>
-                                                </a>
+                                                </a> -->
                                                 <div class="menu-item">
                                                         <span class="cart position-relative text-center ">
-                                                                <img src="static/store/logo/shopping-basket.png"
+                                                                <div style="background-color:#22BBC9; border-radius: 50%; width: 45px; height: 45px; display:flex; align-items: center; justify-content: center;">
+                                                                <img src="media/products/shoppingbag.png"
                                                                         style="max-width: 26px;" alt="">
-                                                                <span class="d-block text-muted"
-                                                                        style="font-size: x-small;">Cart</span>
+                                                                       <!-- <span><i class="fa fa-bag-shopping"></i></span> -->
+                                                                <!-- <span class="d-block text-muted"
+                                                                        style="font-size: x-small;">Cart</span> -->
 
                                                                 <span class="badge cart--count-badge bg--secondary text--primary"
-                                                                        style="top:-10px; font-size: x-small;">0</span>
+                                                                        style="top:8px; font-size: x-small;">0</span></div>
                                                                 <div class="cart-dropdown-block">
                                                                         <div class="cart-dropdown-items"></div>
                                                                         <div class="single-cart-block last">
@@ -118,7 +129,7 @@
                                                                 </div>
                                                         </span>
                                                 </div>
-                                                <div class="menu-item ps-3">
+                                                <!-- <div class="menu-item ps-3">
                                                         <span
                                                                 class="menu-dropdown-container position-relative text-center mx-auto">
                                                                 <a href="javascript:void(0)" class="d-block">
@@ -139,7 +150,7 @@
                                                                         </div>
                                                                 </div>
                                                         </span>
-                                                </div>
+                                                </div> -->
                                         </div>
                                         <div class="d-flex d-lg-none mobile-menu">
                                                 <a href="javascript:void(0)"
@@ -175,28 +186,30 @@
                                                 </span>
                                         </div>
                                 </header>
-                                <nav class="navbar navbar-expand-lg navbar-light bg-white d-none d-sm-flex">
+                                <nav class="navbar navbar-expand-lg navbar-dark d-none d-sm-flex" style="background-color: #22BBC9; width: 100vw;">
                                         <div class="container-fluid">
-                                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                                        <div class="navbar-nav">
+                                                <nav class="w-40 bg-light me-5 ms-5 p-1">
+                                                        <button type="submit"
+                                                      class="btn btn--info search-button"><i
+                                                      class="fa fa-bars mx-4" style="color:#22BBC9"></i>Browse Categories <i
+                                                      class="fa fa-arrow-right ms-3" style="color:#22BBC9 ;"></i></button>
+                                                </nav>
+                                                
+                                                <div class="collapse w-50 navbar-collapse ms-5" id="navbarNavAltMarkup">
+                                                        <div class="navbar-nav" style="padding-left:30px; padding-right:40px;">
                                                                 <a class="nav-link active megamenu-toggler"
                                                                         aria-current="page" href="javascript:void(0)"
-                                                                        data-category="AUDIO">Audio Books</a>
+                                                                        data-category="AUDIO">AUDIOBOOKS</a>
                                                                 <a class="nav-link megamenu-toggler"
                                                                         href="javascript:void(0)"
-                                                                        data-category="eBOOK">eBooks</a>
+                                                                        data-category="eBOOK"> eBOOKS</a>
                                                                 <a class="nav-link megamenu-toggler"
                                                                         href="javascript:void(0)"
-                                                                        data-category="PAPERBACK">Paper Backs</a>
+                                                                        data-category="PAPERBACK">PAPERBACKS </a>
                                                                 <a class="nav-link megamenu-toggler"
                                                                         href="javascript:void(0)"
-                                                                        data-category="FREEBOOK">Free Books</a>
-                                                                <a class="nav-link megamenu-toggler"
-                                                                        href="javascript:void(0)"
-                                                                        data-category="PRE-ORDERS">Pre-orders</a>
-                                                                <a class="nav-link " href="writing-academy/index.html"
-                                                                        data-category="WRITING-ACADEMY">Writing
-                                                                        Academy</a>
+                                                                        data-category="FREEBOOK">PUBLISH</a>
+                                                                
                                                         </div>
                                                 </div>
                                         </div>
@@ -232,351 +245,129 @@
                         <div class="bg--black pt-4 pb-4 position-relative" style="
                     height: 500px;
                     width: 100%;
-                    background-image: url(static/store/images/adb1.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: bottom center;
                     ">
-                                <div class="overlay pt-4 pb-4" style="background-color: rgba(0, 0, 0, 0.7);">
+                                <div class="overlay pt-4 pb-4 " style="background-color:#FFFF;">
                                         <div class="container">
                                                 <div class="row">
-                                                        <div class="col-6">
-                                                                <a href="details/write-that-book-already-/1/index.html">
-                                                                        <img src="media/products/IMG-20200509-WA0002_1.jpg"
+                                                       
+                                                        <div class="col-6 mt-5 d-flex align-items-center justify-content-center">
+                                                                <div class="carousel-content text-dark">
+                                                                        <h3
+                                                                        class=" text-dark product-title  mb-0" style="font-size:40px; font-weight: bolder;">
+                                                                        Publish Your Book
+                                                                        and Increase 
+                                                                        Your Revenue </h3>
+                                                                        <div class="product-details mb-3"  >Grow your community and increase your revenue by self-publishing
+                                                                                 your book using the publishing tool on our platform.
+                                                                        </div>
+                                                                        <div class="text-start">
+                                                                                <a href="#"
+                                                                                        class="btn btn--primary pe-5 ps-5">Start Publishing</a>
+                                                                        </div>
+                                                                        
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-6 flex-end">
+                                                                <a href="#">
+                                                                        <img src="media/products/Frame 7.png"
                                                                                 style="" class="mx-auto" />
                                                                 </a>
-                                                        </div>
-                                                        <div class="col-6">
-                                                                <div class="carousel-content">
-                                                                        <a
-                                                                                href="details/write-that-book-already-/1/index.html">
-                                                                                <h3
-                                                                                        class="font-bold text-white product-title mb-0">
-                                                                                        Write That Book Already!</h3>
-                                                                        </a>
-                                                                        <label
-                                                                                style="font-size: smaller; color: rgba(255, 255, 255,.6)">Florence
-                                                                                Igboayaka</label>
-                                                                        <div class="product-details mb-3">So, you have
-                                                                                thought over and over again about
-                                                                                writing a book, but it seems like a
-                                                                                herculean task. You do not know where to
-                                                                                start or what to write. You may even
-                                                                                know what you want to write about but
-                                                                                are not too sure of how to structure it.
-                                                                                You might have already written the book
-                                                                                but not too sure of how to get it
-                                                                                published, and on what platform to sell.
-                                                                                Well, it is your lucky day because I
-                                                                                have put this book together to make your
-                                                                                journey from writing to selling a
-                                                                                smoother and easier experience. I have
-                                                                                been through this journey myself and I
-                                                                                am now a bestselling author, so I am
-                                                                                making this guide ...</div>
-                                                                        <div class="text-end">
-                                                                                <a href="details/write-that-book-already-/1/index.html"
-                                                                                        class="btn btn-outline-primary pe-5 ps-5">Explore</a>
-                                                                        </div>
-                                                                </div>
                                                         </div>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
-                        <div class="bg--black pt-4 pb-4 position-relative" style="
-                    height: 500px;
-                    width: 100%;
-                    background-image: url(static/store/images/adb1.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: bottom center;
-                    ">
-                                <div class="overlay pt-4 pb-4" style="background-color: rgba(0, 0, 0, 0.7);">
-                                        <div class="container">
-                                                <div class="row">
-                                                        <div class="col-6">
-                                                                <a
-                                                                        href="details/esteria--rise-of-the-faeries/3/index.html">
-                                                                        <img src="media/products/IMG-20210105-WA0028.jpg"
-                                                                                style="" class="mx-auto" />
-                                                                </a>
-                                                        </div>
-                                                        <div class="col-6">
-                                                                <div class="carousel-content">
-                                                                        <a
-                                                                                href="details/esteria--rise-of-the-faeries/3/index.html">
-                                                                                <h3
-                                                                                        class="font-bold text-white product-title mb-0">
-                                                                                        ESTERIA</h3>
-                                                                        </a>
-                                                                        <label
-                                                                                style="font-size: smaller; color: rgba(255, 255, 255,.6)">S.A.
-                                                                                PETERS</label>
-                                                                        <div class="product-details mb-3">Reece didn't
-                                                                                stop, he was running as fast as his legs
-                                                                                could carry him. He ran out of the trees
-                                                                                into the grasslands and paused to see if
-                                                                                the attackers were still behind him.
-                                                                                Reece had such a hard time catching his
-                                                                                breath, that he placed his hands on his
-                                                                                knees and shut his eyes, trembling in
-                                                                                fear. Just then, as he opened his eyes,
-                                                                                the feet of three men surrounded him.
-                                                                                Reece slowly raised his gaze to see
-                                                                                laser guns in their hands. The guns
-                                                                                looked like Tasers but were longer. They
-                                                                                were all wearing black hoods, the kind
-                                                                                wizards wore. They had the same build as
-                                                                                him. Tall, fit, but not as muscular....
-                                                                        </div>
-                                                                        <div class="text-end">
-                                                                                <a href="details/esteria--rise-of-the-faeries/3/index.html"
-                                                                                        class="btn btn-outline-primary pe-5 ps-5">Explore</a>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
+                      
+                </div>
+        </div>
+
+        <!-- <div class="container-fluid " style="background-color:green;">
+                
+                    <div class="row py-5 justify-content-center">
+                          <div style="background-color:white ;">
+                             <div class="col-4">
+                                <img src="media/products/frame 2.png"  width="100%" height="100%" alt="" srcset="">
+                             </div>
+                             <div class="col-4">
+                                <div class="" style="
+                                display: block;
+                                height: 400px;
+                                padding-top: 20px;
+                               ">                     
+                             <h3 class="mt-4 text-dark " style="font-weight:bold; font-size:35px">Get Your Book a Holistic <br> and Wider Readership <br> </h3>
+                              <p class="product-details"> Raise your bar as an indie author by gaining <br>
+                                a wider readership and engagement <br>
+                                on our platform.
+                                </p>
+   
+                                   <div class="text-start">
+                                           <a href="#"
+                                                   class="btn btn--primary pe-5 ps-5">Get Started</a>
+                                   </div>
+                             </div>
+                            </div>
+                         </div>
                         </div>
-                        <div class="bg--black pt-4 pb-4 position-relative" style="
-                    height: 500px;
-                    width: 100%;
-                    background-image: url(static/store/images/adb1.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: bottom center;
-                    ">
-                                <div class="overlay pt-4 pb-4" style="background-color: rgba(0, 0, 0, 0.7);">
-                                        <div class="container">
-                                                <div class="row">
-                                                        <div class="col-6">
-                                                                <a href="details/there-is-only-one-me/5/index.html">
-                                                                        <img src="media/products/IMG-20200915-WA0027_1.jpg"
-                                                                                style="" class="mx-auto" />
-                                                                </a>
-                                                        </div>
-                                                        <div class="col-6">
-                                                                <div class="carousel-content">
-                                                                        <a
-                                                                                href="details/there-is-only-one-me/5/index.html">
-                                                                                <h3
-                                                                                        class="font-bold text-white product-title mb-0">
-                                                                                        There Is Only One Me</h3>
-                                                                        </a>
-                                                                        <label
-                                                                                style="font-size: smaller; color: rgba(255, 255, 255,.6)">Florence
-                                                                                Igboayaka</label>
-                                                                        <div class="product-details mb-3">This journal
-                                                                                is a guide to cultivate an attitude of
-                                                                                gratitude, speaking positively and
-                                                                                creating a safe place for girls to
-                                                                                document their period journey and
-                                                                                menstrual experience. Each well-designed
-                                                                                page gives girls an opportunity to
-                                                                                express themselves, improve their
-                                                                                writing skills and document their story.
-                                                                                It is a must have for girls from age
-                                                                                8.In a world where negativity and mental
-                                                                                health issues among young people are on
-                                                                                the rise, this journal helps keep them
-                                                                                positive and focused. Ada, Anabel and
-                                                                                Misha take girls on a journey of
-                                                                                self-discovery through the habit of
-                                                                                journaling by focusing on bei...</div>
-                                                                        <div class="text-end">
-                                                                                <a href="details/there-is-only-one-me/5/index.html"
-                                                                                        class="btn btn-outline-primary pe-5 ps-5">Explore</a>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
+                
+        </div>
+         -->
+               
+           <div class="container-fluid" style="background-color:#22BBC9; height: 500px; width: 100%;">
+                <div class="conatiner">
+                        <div class="row py-5 justify-content-center">
+                                <div class="col-4">
+                                <img src="media/products/frame 2.png"  width="100%" height="100%" alt="" srcset="">
+                                        
                                 </div>
-                        </div>
-                        <div class="bg--black pt-4 pb-4 position-relative" style="
-                    height: 500px;
-                    width: 100%;
-                    background-image: url(static/store/images/adb1.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: bottom center;
-                    ">
-                                <div class="overlay pt-4 pb-4" style="background-color: rgba(0, 0, 0, 0.7);">
-                                        <div class="container">
-                                                <div class="row">
-                                                        <div class="col-6">
-                                                                <a href="details/the-period-comic--/6/index.html">
-                                                                        <img src="media/products/tpc_1_front_cover.jpg"
-                                                                                style="" class="mx-auto" />
-                                                                </a>
-                                                        </div>
-                                                        <div class="col-6">
-                                                                <div class="carousel-content">
-                                                                        <a
-                                                                                href="details/the-period-comic--/6/index.html">
-                                                                                <h3
-                                                                                        class="font-bold text-white product-title mb-0">
-                                                                                        The Period Comic.</h3>
-                                                                        </a>
-                                                                        <label
-                                                                                style="font-size: smaller; color: rgba(255, 255, 255,.6)">Florence
-                                                                                Igboayaka</label>
-                                                                        <div class="product-details mb-3">Puberty comes
-                                                                                with a lot of changes. The Period Comic
-                                                                                (An Illustrated book) will help girls
-                                                                                understand and learn about such changes
-                                                                                in their bodies in a fun, easy and
-                                                                                intriguing way as they continue to grow,
-                                                                                whilst building their
-                                                                                self-confidence.For many girls, puberty
-                                                                                can be an uncertain time. The Period
-                                                                                Comic includes everything girls need to
-                                                                                know about growing breasts, acne or
-                                                                                pimples, their periods, hair in private
-                                                                                areas, feelings, nutrition, managing
-                                                                                period cramps, preparing for your first
-                                                                                period, period poverty, and so much
-                                                                                more. This book has practical steps to
-                                                                                guide them as they learn ...</div>
-                                                                        <div class="text-end">
-                                                                                <a href="details/the-period-comic--/6/index.html"
-                                                                                        class="btn btn-outline-primary pe-5 ps-5">Explore</a>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="bg--black pt-4 pb-4 position-relative" style="
-                    height: 500px;
-                    width: 100%;
-                    background-image: url(static/store/images/adb1.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: bottom center;
-                    ">
-                                <div class="overlay pt-4 pb-4" style="background-color: rgba(0, 0, 0, 0.7);">
-                                        <div class="container">
-                                                <div class="row">
-                                                        <div class="col-6">
-                                                                <a
-                                                                        href="details/you-are-not-everyone-s-cup-of-tea/10/index.html">
-                                                                        <img src="media/products/PHOTO-2020-07-19-08-01-06_2.jpg"
-                                                                                style="" class="mx-auto" />
-                                                                </a>
-                                                        </div>
-                                                        <div class="col-6">
-                                                                <div class="carousel-content">
-                                                                        <a
-                                                                                href="details/you-are-not-everyone-s-cup-of-tea/10/index.html">
-                                                                                <h3
-                                                                                        class="font-bold text-white product-title mb-0">
-                                                                                        You are Not Everyone&#x27;s Cup
-                                                                                        of Tea</h3>
-                                                                        </a>
-                                                                        <label
-                                                                                style="font-size: smaller; color: rgba(255, 255, 255,.6)">Eloho
-                                                                                Efemuai</label>
-                                                                        <div class="product-details mb-3">This is a
-                                                                                story of my journey into overcoming
-                                                                                imposter syndrome to become the
-                                                                                confident woman that I am now....</div>
-                                                                        <div class="text-end">
-                                                                                <a href="details/you-are-not-everyone-s-cup-of-tea/10/index.html"
-                                                                                        class="btn btn-outline-primary pe-5 ps-5">Explore</a>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="bg--black pt-4 pb-4 position-relative" style="
-                    height: 500px;
-                    width: 100%;
-                    background-image: url(static/store/images/adb1.jpg);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: bottom center;
-                    ">
-                                <div class="overlay pt-4 pb-4" style="background-color: rgba(0, 0, 0, 0.7);">
-                                        <div class="container">
-                                                <div class="row">
-                                                        <div class="col-6">
-                                                                <a
-                                                                        href="details/easy-songwriting-for-the-beginner/11/index.html">
-                                                                        <img src="media/products/Easy-Songwriting--Front-Cover-1b_3.jpg"
-                                                                                style="" class="mx-auto" />
-                                                                </a>
-                                                        </div>
-                                                        <div class="col-6">
-                                                                <div class="carousel-content">
-                                                                        <a
-                                                                                href="details/easy-songwriting-for-the-beginner/11/index.html">
-                                                                                <h3
-                                                                                        class="font-bold text-white product-title mb-0">
-                                                                                        Easy Songwriting For The
-                                                                                        Beginner</h3>
-                                                                        </a>
-                                                                        <label
-                                                                                style="font-size: smaller; color: rgba(255, 255, 255,.6)">Solomon
-                                                                                Igboayaka</label>
-                                                                        <div class="product-details mb-3">The principles
-                                                                                and process of song writing are
-                                                                                universal in the world of music. The
-                                                                                same ingredients are required to put a
-                                                                                song together and it doesn't matter
-                                                                                whether it's a secular song or a gospel
-                                                                                song. What does matter, is that the end
-                                                                                product of a finished song is achieved.
-                                                                                So many Christians love the idea of
-                                                                                worshipping God with a song. Some would
-                                                                                like to write and sing the songs being
-                                                                                birthed in their hearts to the Lord.
-                                                                                However, a large proportion lack the
-                                                                                confidence to do so, some lack a
-                                                                                supportive environment that encourages
-                                                                                their creativity, some believe it is too
-                                                                                difficult etc. Afte...</div>
-                                                                        <div class="text-end">
-                                                                                <a href="details/easy-songwriting-for-the-beginner/11/index.html"
-                                                                                        class="btn btn-outline-primary pe-5 ps-5">Explore</a>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
+                                <div class="col-4">
+                                        <div class="" style="
+                                        display: block;
+                                        height: 400px;
+                                        padding-top: 20px;
+                                        
+                                       ">                     
+                                     <h3 class="mt-4 text-dark " style="font-weight:bold; font-size:35px">Get Your Book a Holistic <br> and Wider Readership <br> </h3>
+                                      <p class="product-details"> Raise your bar as an indie author by gaining <br>
+                                        a wider readership and engagement <br>
+                                        on our platform.
+                                        </p>
+           
+                                           <div class="text-start">
+                                                   <a href="#"
+                                                           class="btn btn--primary pe-5 ps-5">Get Started</a>
+                                           </div>
+                                     </div>
                                 </div>
                         </div>
                 </div>
-        </div>
-        </div>
+           </div>
+
+
         <div class="container mt-5 mb-5">
-                <div class="clearfix">
-                        <h4>Trending in Latest</h4>
+                <div class="clearfix py-4">
+                        <h4 style="font-size:25px; font-weight:bold; color: #141414;">Trending in Ebooks <a href="#" class="float-end" >View all</a></h4>
                 </div>
                 <div class="product-slider">
                         <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
+                                <div class="card product border-light mb-5 mx-auto position-relative">
+                                        <div class="card-img">
                                                 <a href="details/mental-health-and-the-christian/32/index.html">
                                                         <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/PHOTO-2021-08-10-15-33-44_p95gk7J.jpg"
+                                                                <img src="media/products/IMG-20200509-WA0002_1.jpg"
                                                                         class="card-img-top" style="">
                                                         </div>
                                                 </a>
                                         </div>
                                         <div class="card-body pe-0 ps-0">
                                                 <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="MENTAL HEALTH AND THE CHRISTIAN">
+                                                        title="Write That Book Already">
                                                         <a href="details/mental-health-and-the-christian/32/index.html"
                                                                 class="text-decoration-none product-title">
-                                                                MENTAL HEALTH AND THE CHRISTIAN</a>
+                                                                Write That Book Already</a>
                                                 </h5>
-                                                <label class="text-muted">Glory Elofuke</label>
                                                 <div class="rating-widget">
                                                         <div class="rating-block">
                                                                 <span class="fa fa-star "></span>
@@ -588,34 +379,33 @@
                                                                 </span>
                                                         </div>
                                                 </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.99</div>
+                                                <div class="mb-2 position-absolute" style="color: #141414; top:0; right:-5px; background-color: white; padding: 8px; ">&#163;2.50</div>
                                                 <div class="d-g rid">
                                                         <a href="javascript:void(0)" onclick="addToCart('32')"
                                                                 class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
+                                                                        class=""
                                                                         style="color: #ffff00a3"></i> Add to cart</a>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <div>
-                                <div class="card product mb-5 mx-auto">
+                                <div class="card product border-light mb-5 mx-auto">
                                         <div class="position-relative">
                                                 <a href="details/raising-today-s-teens/33/index.html">
                                                         <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/FRONT_COVER_RTT.jpg"
+                                                                <img src="media/products/IMG-20210105-WA0028.jpg"
                                                                         class="card-img-top" style="">
                                                         </div>
                                                 </a>
                                         </div>
                                         <div class="card-body pe-0 ps-0">
                                                 <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="Raising Today&#x27;s Teens">
+                                                        title="Esteria">
                                                         <a href="details/raising-today-s-teens/33/index.html"
                                                                 class="text-decoration-none product-title">
-                                                                Raising Today&#x27;s Teens</a>
+                                                                Esteria</a>
                                                 </h5>
-                                                <label class="text-muted">Aimanehi Awenlimobor</label>
                                                 <div class="rating-widget">
                                                         <div class="rating-block">
                                                                 <span class="fa fa-star "></span>
@@ -627,35 +417,32 @@
                                                                 </span>
                                                         </div>
                                                 </div>
-                                                <div class="mb-2" style="color: #159500">&#163;2.99</div>
+                                                <div class="mb-2 position-absolute" style="color: #141414; top:0; right:-5px; background-color: white; padding: 8px; ">&#163;4.97</div>
                                                 <div class="d-g rid">
                                                         <a href="javascript:void(0)" onclick="addToCart('33')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
+                                                                class="btn btn--primary font-regular"> Add to cart</a>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <div>
-                                <div class="card product mb-5 mx-auto">
+                                <div class="card product border-light mb-5 mx-auto">
                                         <div class="position-relative">
                                                 <a href="details/pathways-to-unlimited-joy/34/index.html">
                                                         <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/Pathways_to_Unlimited_Joy_cover_for_kindle_version.jpg"
+                                                                <img src="media/products/IMG-20200825-WA0005_2_62gOXC3.jpg"
                                                                         class="card-img-top" style="">
                                                         </div>
                                                 </a>
                                         </div>
                                         <div class="card-body pe-0 ps-0">
                                                 <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="PATHWAYS TO UNLIMITED JOY">
+                                                        title="The Period Comic">
                                                         <a href="details/pathways-to-unlimited-joy/34/index.html"
                                                                 class="text-decoration-none product-title">
-                                                                PATHWAYS TO UNLIMITED JOY</a>
+                                                                The Period Comic</a>
                                                 </h5>
-                                                <label class="text-muted">Joy Ani</label>
-                                                <div class="rating-widget">
+                                                <div class="rating-widget"> 
                                                         <div class="rating-block">
                                                                 <span class="fa fa-star "></span>
                                                                 <span class="fa fa-star "></span>
@@ -666,34 +453,31 @@
                                                                 </span>
                                                         </div>
                                                 </div>
-                                                <div class="mb-2" style="color: #159500">&#163;12.99</div>
+                                                <div class="mb-2 position-absolute " style="color: #141414; top:0; right:-5px; background-color: white; padding: 8px; ">&#163;3.20</div>
                                                 <div class="d-g rid">
                                                         <a href="javascript:void(0)" onclick="addToCart('34')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
+                                                                class="btn btn--primary font-regular"> Add to cart</a>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <div>
-                                <div class="card product mb-5 mx-auto">
+                                <div class="card product border-light mb-5 mx-auto">
                                         <div class="position-relative">
                                                 <a href="details/fierce-/35/index.html">
                                                         <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/Screenshot_20211018-124831_WhatsApp.jpg"
+                                                                <img src="media/products/IMG-20200915-WA0027_1.jpg"
                                                                         class="card-img-top" style="">
                                                         </div>
                                                 </a>
                                         </div>
                                         <div class="card-body pe-0 ps-0">
                                                 <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="FIERCE">
+                                                        title="There Is Only One Me">
                                                         <a href="details/fierce-/35/index.html"
                                                                 class="text-decoration-none product-title">
-                                                                FIERCE</a>
+                                                                There Is Only One Me</a>
                                                 </h5>
-                                                <label class="text-muted">Peace GEORGE</label>
                                                 <div class="rating-widget">
                                                         <div class="rating-block">
                                                                 <span class="fa fa-star "></span>
@@ -705,18 +489,16 @@
                                                                 </span>
                                                         </div>
                                                 </div>
-                                                <div class="mb-2" style="color: #159500">&#163;5.50</div>
+                                                <div class="mb-2 position-absolute  " style="color: #141414; top:0; right:-5px; background-color: white; padding: 8px; ">&#163;4.20</div>
                                                 <div class="d-g rid">
                                                         <a href="javascript:void(0)" onclick="addToCart('35')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
+                                                                class="btn btn--primary font-regular"> Add to cart</a>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <div>
-                                <div class="card product mb-5 mx-auto">
+                                <div class="card product border-light mb-5 mx-auto">
                                         <div class="position-relative">
                                                 <a href="details/help--my-little-girl-is-growing/37/index.html">
                                                         <div class="flex- center text-center product-img" style="">
@@ -732,7 +514,6 @@
                                                                 class="text-decoration-none product-title">
                                                                 Help! My Little Girl is Growing</a>
                                                 </h5>
-                                                <label class="text-muted">Florence Igboayaka</label>
                                                 <div class="rating-widget">
                                                         <div class="rating-block">
                                                                 <span class="fa fa-star "></span>
@@ -744,42 +525,79 @@
                                                                 </span>
                                                         </div>
                                                 </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.99</div>
+                                                <div class="mb-2 position-absolute" style="color: #141414; top:0; right:-5px; background-color: white; padding: 8px; ">&#163;4.99</div>
                                                 <div class="d-g rid">
                                                         <a href="javascript:void(0)" onclick="addToCart('37')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
+                                                                class="btn btn--primary font-regular"> Add to cart</a>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                 </div>
         </div>
-        <div class="container">
-                <div class="clearfix">
-                        <h4>Trending in eBooks <a href="#" class="float-end" style="font-size: large;">View</a></h4>
+
+        <div class="container-fluid py-5 mb-0" style="background-color:#EFEFEF;
+        height:500px;
+        width:100%;
+        ">
+              <div class="row  d-flex align-items-center  justify-content-start">
+                   <div class="col-8 " style="background-color:#D1F7FB ;
+                    border-bottom-right-radius: 50px;
+                    border-top-right-radius:50px ;
+                    align-items: center;
+                    justify-content: center;
+                    height: 400px;
+                       
+                  
+                    "> 
+                    <div class="" style= "
+                          display: block;
+                           height: 400px;
+                           padding-top: 90px;
+                           margin-right: 100px;
+                           text-align: end;
+                            ">  
+                          <h3 class="mt-4 text-dark" style="font-weight:bold ; font-size: 40px;">Why we matter the more?</h3>
+                          <p class="product-details text-sm-">Our all-in-one platform helps indie authors <br>
+                                publish and grow their community. Upload <br>
+                                E-books and Audiobooks to reach a wider <br>
+                                audience.
+                                </p>
+                   
+                    </div>
+                       
+                   </div>
+                   <div class="col-4 d-flex justify-content-start" style="position:absolute; right:80px" >
+                      <img src="media/products/adb3 1.png" width="95%" height="95%" alt="" srcset="" style="border-top-left-radius:70px ;">
+                   </div>
+              </div>
+        </div>
+
+      
+
+        <div class="container py-5">
+                <div class="clearfix py-5" >
+                        <h4 style="font-size:25px; font-weight: bold;">Trending in Latest E-books <a href="#"   class="float-end" >View all</a></h4>
                 </div>
 
                 <div class="product-slider">
                         <div>
-                                <div class="card product mb-5 mx-auto">
+                                <div class="card product border-light mb-5 mx-auto">
                                         <div class="position-relative">
                                                 <a href="details/write-that-book-already-/1/index.html">
                                                         <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/IMG-20200509-WA0002_1.jpg"
+                                                                <img src="media/products/PHOTO-2021-08-10-15-33-44_p95gk7J.jpg"
                                                                         class="card-img-top" style="">
                                                         </div>
                                                 </a>
                                         </div>
                                         <div class="card-body pe-0 ps-0">
                                                 <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="Write That Book Already!">
+                                                        title="Mental Health And The Christain">
                                                         <a href="details/write-that-book-already-/1/index.html"
                                                                 class="text-decoration-none product-title">
-                                                                Write That Book Already!</a>
+                                                                Mental Health And the Christain</a>
                                                 </h5>
-                                                <label class="text-muted">Florence Igboayaka</label>
                                                 <div class="rating-widget">
                                                         <div class="rating-block">
                                                                 <span class="fa fa-star "></span>
@@ -791,34 +609,31 @@
                                                                 </span>
                                                         </div>
                                                 </div>
-                                                <div class="mb-2" style="color: #159500">&#163;2.50</div>
+                                                <div class="mb-2 position-absolute" style="color: #141414; top:0; right:-5px; background-color: white; padding: 8px; ">&#163;4.99</div>
                                                 <div class="d-g rid">
                                                         <a href="javascript:void(0)" onclick="addToCart('1')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
+                                                                class="btn btn--primary font-regular"> Add to cart</a>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <div>
-                                <div class="card product mb-5 mx-auto">
+                                <div class="card product border-light mb-5 mx-auto">
                                         <div class="position-relative">
                                                 <a href="details/esteria--rise-of-the-faeries/3/index.html">
                                                         <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/IMG-20210105-WA0028.jpg"
+                                                                <img src="media/products/FRONT_COVER_RTT.jpg"
                                                                         class="card-img-top" style="">
                                                         </div>
                                                 </a>
                                         </div>
                                         <div class="card-body pe-0 ps-0">
                                                 <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="ESTERIA">
+                                                        title="Raising Today's Teen">
                                                         <a href="details/esteria--rise-of-the-faeries/3/index.html"
                                                                 class="text-decoration-none product-title">
-                                                                ESTERIA</a>
+                                                                Raising Today's Teen</a>
                                                 </h5>
-                                                <label class="text-muted">S.A. PETERS</label>
                                                 <div class="rating-widget">
                                                         <div class="rating-block">
                                                                 <span class="fa fa-star "></span>
@@ -830,34 +645,31 @@
                                                                 </span>
                                                         </div>
                                                 </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.97</div>
+                                                <div class="mb-2 position-absolute" style="color: #141414; top:0; right:-5px; background-color: white; padding: 8px; ">&#163;2.99</div>
                                                 <div class="d-g rid">
                                                         <a href="javascript:void(0)" onclick="addToCart('3')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
+                                                                class="btn btn--primary font-regular"> Add to cart</a>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <div>
-                                <div class="card product mb-5 mx-auto">
+                                <div class="card product border-light mb-5 mx-auto">
                                         <div class="position-relative">
                                                 <a href="details/the-period-comic-2/4/index.html">
                                                         <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/IMG-20200825-WA0005_2_62gOXC3.jpg"
+                                                                <img src="media/products/Pathways_to_Unlimited_Joy_cover_for_kindle_version.jpg"
                                                                         class="card-img-top" style="">
                                                         </div>
                                                 </a>
                                         </div>
                                         <div class="card-body pe-0 ps-0">
                                                 <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="The Period Comic 2">
+                                                        title="Pathways To Unlimited Joy">
                                                         <a href="details/the-period-comic-2/4/index.html"
                                                                 class="text-decoration-none product-title">
-                                                                The Period Comic 2</a>
+                                                                Pathways To Unlimited Joy</a>
                                                 </h5>
-                                                <label class="text-muted">Florence Igboayaka</label>
                                                 <div class="rating-widget">
                                                         <div class="rating-block">
                                                                 <span class="fa fa-star "></span>
@@ -869,34 +681,31 @@
                                                                 </span>
                                                         </div>
                                                 </div>
-                                                <div class="mb-2" style="color: #159500">&#163;3.20</div>
+                                                <div class="mb-2 position-absolute " style="color: #141414; top:0; right:-5px; background-color: white; padding: 8px; ">&#163;12.99</div>
                                                 <div class="d-g rid">
                                                         <a href="javascript:void(0)" onclick="addToCart('4')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
+                                                                class="btn btn--primary font-regular"> Add to cart</a>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                         <div>
-                                <div class="card product mb-5 mx-auto">
+                                <div class="card product border-light mb-5 mx-auto">
                                         <div class="position-relative">
                                                 <a href="details/there-is-only-one-me/5/index.html">
                                                         <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/IMG-20200915-WA0027_1.jpg"
+                                                                <img src="media/products/Screenshot_20211018-124831_WhatsApp.jpg"
                                                                         class="card-img-top" style="">
                                                         </div>
                                                 </a>
                                         </div>
                                         <div class="card-body pe-0 ps-0">
                                                 <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="There Is Only One Me">
+                                                        title="Fierce">
                                                         <a href="details/there-is-only-one-me/5/index.html"
                                                                 class="text-decoration-none product-title">
-                                                                There Is Only One Me</a>
+                                                                Fierce</a>
                                                 </h5>
-                                                <label class="text-muted">Florence Igboayaka</label>
                                                 <div class="rating-widget">
                                                         <div class="rating-block">
                                                                 <span class="fa fa-star "></span>
@@ -908,57 +717,17 @@
                                                                 </span>
                                                         </div>
                                                 </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.20</div>
+                                                <div class="mb-2 position-absolute" style="color: #141414; top:0; right:-5px; background-color: white; padding: 8px; ">&#163;5.50</div>
                                                 <div class="d-g rid">
                                                         <a href="javascript:void(0)" onclick="addToCart('5')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
+                                                                class="btn btn--primary font-regular"> Add to cart</a>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
+                        
                         <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a href="details/the-period-comic--/6/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/tpc_1_front_cover.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="The Period Comic.">
-                                                        <a href="details/the-period-comic--/6/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                The Period Comic.</a>
-                                                </h5>
-                                                <label class="text-muted">Florence Igboayaka</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.30</div>
-                                                <div class="d-g rid">
-                                                        <a href="javascript:void(0)" onclick="addToCart('6')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div>
-                                <div class="card product mb-5 mx-auto">
+                                <div class="card product border-light mb-5 mx-auto">
                                         <div class="position-relative">
                                                 <a href="details/arise-with-eloho/8/index.html">
                                                         <div class="flex- center text-center product-img" style="">
@@ -974,7 +743,6 @@
                                                                 class="text-decoration-none product-title">
                                                                 Arise with Eloho</a>
                                                 </h5>
-                                                <label class="text-muted">Eloho Efemuai</label>
                                                 <div class="rating-widget">
                                                         <div class="rating-block">
                                                                 <span class="fa fa-star "></span>
@@ -986,96 +754,18 @@
                                                                 </span>
                                                         </div>
                                                 </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.99</div>
+                                                <div class="mb-2 position-absolute" style="color: #141414; top:0; right:-5px; background-color: white; padding: 8px; ">&#163;4.99</div>
                                                 <div class="d-g rid">
                                                         <a href="javascript:void(0)" onclick="addToCart('8')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
+                                                                class="btn btn--primary font-regular"> Add to cart</a>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
+                        
+                       
                         <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a href="details/esteria-faeries--origins/9/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/IMG-20210105-WA0023_1.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="ESTERIA">
-                                                        <a href="details/esteria-faeries--origins/9/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                ESTERIA</a>
-                                                </h5>
-                                                <label class="text-muted">S.A. PETERS</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.97</div>
-                                                <div class="d-g rid">
-                                                        <a href="javascript:void(0)" onclick="addToCart('9')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a href="details/you-are-not-everyone-s-cup-of-tea/10/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/PHOTO-2020-07-19-08-01-06_2.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="You are Not Everyone&#x27;s Cup of Tea">
-                                                        <a href="details/you-are-not-everyone-s-cup-of-tea/10/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                You are Not Everyone&#x27;s Cup of Tea</a>
-                                                </h5>
-                                                <label class="text-muted">Eloho Efemuai</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.99</div>
-                                                <div class="d-g rid">
-                                                        <a href="javascript:void(0)" onclick="addToCart('10')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div>
-                                <div class="card product mb-5 mx-auto">
+                                <div class="card product border-light mb-5 mx-auto">
                                         <div class="position-relative">
                                                 <a href="details/easy-songwriting-for-the-beginner/11/index.html">
                                                         <div class="flex- center text-center product-img" style="">
@@ -1091,7 +781,6 @@
                                                                 class="text-decoration-none product-title">
                                                                 Easy Songwriting For The Beginner</a>
                                                 </h5>
-                                                <label class="text-muted">Solomon Igboayaka</label>
                                                 <div class="rating-widget">
                                                         <div class="rating-block">
                                                                 <span class="fa fa-star "></span>
@@ -1103,515 +792,123 @@
                                                                 </span>
                                                         </div>
                                                 </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.97</div>
+                                                <div class="mb-2 position-absolute" style="color: #141414; top:0; right:-5px; background-color: white; padding: 8px; ">&#163;4.97</div>
                                                 <div class="d-g rid">
                                                         <a href="javascript:void(0)" onclick="addToCart('11')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
+                                                                class="btn btn--primary font-regular"> Add to cart</a>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                 </div>
-        </div>
-        <div class="container-fluid m-0 p-0">
-                <div class="why-we-matter d-none d-md-block" style="
-        height: 400px;
-        width: 100%;
-        background-image: url(static/store/images/adb7.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: right center;
+        </div>     
+
+       
+       
+
+       
+        <div class="container-fluid py-5 m-0" style="background-color:#EFEFEF;
+        height:500px;
+        width:100%;
         ">
-                        <div class="row h-100">
-                                <div class="col-sm-6 h-100">
-                                        <div class="h-100"
-                                                style="background: rgb(0, 0, 0, 0.8); border-bottom-right-radius: 400px;">
-                                                <div class="container justify-content-center d-flex h-100 text-center"
-                                                        style="flex-direction: column;">
-                                                        <h3 class="mt-4 text-white">Why we matter the more?</h3>
-                                                        <p class="product-details">An all-in-one platform that helps
-                                                                indie authors publish and grow their community and email
-                                                                list.</p>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div class="col-sm-6 text-end">
+              <div class="row  d-flex align-items-center  justify-content-end">
+                   <div class="col-8" style="background-color:#D1F7FB ;
+                    border-bottom-left-radius: 40px;
+                    border-top-left-radius:40px ;
+                    align-items: center;
+                    justify-content: center;
+                    height: 400px;
 
-                                </div>
-                        </div>
-                </div>
-                <div class="d-block d-md-none " style="
-        background-image: url(static/store/images/adb6.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        ">
-                        <div class="overlay-dark pt-5 pb-5" style="background-color: rgb(0, 0, 0, 0.6)">
-                                <div class="container text-center">
-                                        <h3 class="mt-4 text-white">Why we matter the more?</h3>
-                                        <p class="product-details">An all-in-one platform that helps indie authors
-                                                publish and grow their community and email list.</p>
-                                </div>
-                        </div>
-                </div>
-        </div>
+                  
+                    ">
+                       <div class="" style="
+                             display: block;
+                             height: 400px;
+                             padding-top: 90px;
+                             /* padding-right: 50px; */
+                             margin-left: 120px;
+                             /* text-align: justify; */
 
-        <div class="container mt-5 mb-5">
-                <div class="clearfix">
-                        <h4>Trending in Featured</h4>
-                </div>
-                <div class="product-slider">
-                        <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a href="details/your-greatest-investment/21/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/Your_Greatest_Investment.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="Your Greatest Investment">
-                                                        <a href="details/your-greatest-investment/21/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                Your Greatest Investment</a>
-                                                </h5>
-                                                <label class="text-muted">Okunuga Precious Olayinka</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;5.99</div>
-                                                <div class="d-g rid">
-                                                        <a href="javascript:void(0)" onclick="addToCart('21')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a href="details/dare-to-unleash-the-power-within/22/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/Dare_to_unleash_the_power_within.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="Dare to Unleash The Power Within">
-                                                        <a href="details/dare-to-unleash-the-power-within/22/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                Dare to Unleash The Power Within</a>
-                                                </h5>
-                                                <label class="text-muted">Okunuga Precious Olayinka</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.69</div>
-                                                <div class="d-g rid">
-                                                        <a href="javascript:void(0)" onclick="addToCart('22')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a
-                                                        href="details/just-before-you-start-that-food-business/23/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/IMG-20200701-WA0026.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="Just Before You Start That Food Business">
-                                                        <a href="details/just-before-you-start-that-food-business/23/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                Just Before You Start That Food Business</a>
-                                                </h5>
-                                                <label class="text-muted">Mojibola Oyediran</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.95</div>
-                                                <div class="d-g rid">
-                                                        <a href="javascript:void(0)" onclick="addToCart('23')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a href="details/the-parenting-guide-you-need-/25/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/Front_book_cover_attk0Ym.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="THE PARENTING GUIDE YOU NEED">
-                                                        <a href="details/the-parenting-guide-you-need-/25/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                THE PARENTING GUIDE YOU NEED</a>
-                                                </h5>
-                                                <label class="text-muted">Francisca C AKUJOBI</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.00</div>
-                                                <div class="d-g rid">
-                                                        <a href="javascript:void(0)" onclick="addToCart('25')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a href="details/hope-for-a-better-tomorrow/26/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/FRONT_PHOTO-2020-09-18-20-55-27_2.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="HOPE FOR A BETTER TOMORROW">
-                                                        <a href="details/hope-for-a-better-tomorrow/26/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                HOPE FOR A BETTER TOMORROW</a>
-                                                </h5>
-                                                <label class="text-muted">CHIZURUMOKE P Akujobi</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.00</div>
-                                                <div class="d-g rid">
-                                                        <a href="javascript:void(0)" onclick="addToCart('26')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a href="details/secrets-to-a-healthy-marriage/29/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/image4_3_7858K6z.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="SECRETS TO A HEALTHY MARRIAGE">
-                                                        <a href="details/secrets-to-a-healthy-marriage/29/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                SECRETS TO A HEALTHY MARRIAGE</a>
-                                                </h5>
-                                                <label class="text-muted">FRANCISCA C AKUJOBI</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.00</div>
-                                                <div class="d-g rid">
-                                                        <a href="javascript:void(0)" onclick="addToCart('29')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a href="details/mental-health-and-the-christian/32/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/PHOTO-2021-08-10-15-33-44_p95gk7J.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="MENTAL HEALTH AND THE CHRISTIAN">
-                                                        <a href="details/mental-health-and-the-christian/32/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                MENTAL HEALTH AND THE CHRISTIAN</a>
-                                                </h5>
-                                                <label class="text-muted">Glory Elofuke</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.99</div>
-                                                <div class="d-g rid">
-                                                        <a href="javascript:void(0)" onclick="addToCart('32')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a href="details/raising-today-s-teens/33/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/FRONT_COVER_RTT.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="Raising Today&#x27;s Teens">
-                                                        <a href="details/raising-today-s-teens/33/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                Raising Today&#x27;s Teens</a>
-                                                </h5>
-                                                <label class="text-muted">Aimanehi Awenlimobor</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;2.99</div>
-                                                <div class="d-g rid">
-                                                        <a href="javascript:void(0)" onclick="addToCart('33')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a href="details/pathways-to-unlimited-joy/34/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/Pathways_to_Unlimited_Joy_cover_for_kindle_version.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="PATHWAYS TO UNLIMITED JOY">
-                                                        <a href="details/pathways-to-unlimited-joy/34/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                PATHWAYS TO UNLIMITED JOY</a>
-                                                </h5>
-                                                <label class="text-muted">Joy Ani</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;12.99</div>
-                                                <div class="d-g rid">
-                                                        <a href="javascript:void(0)" onclick="addToCart('34')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a href="details/fierce-/35/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/Screenshot_20211018-124831_WhatsApp.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="FIERCE">
-                                                        <a href="details/fierce-/35/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                FIERCE</a>
-                                                </h5>
-                                                <label class="text-muted">Peace GEORGE</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;5.50</div>
-                                                <div class="d-g rid">
+                            ">                     
+                          <h3 class="mt-4 text-dark " style="font-weight:bold; font-size:35px">Getting Stuck at Writing <br>
+                                Your Book?
+                                </h3>
+                           <p class="product-details">Get started with our writing training to transform <br>
+                                your writing skill and help you achieve your book <br>
+                                publishing dreams as an indie author.</p>
 
-                                                        <a href="javascript:void(0)" onclick="addToCart('35')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
+                                <div class="text-start">
+                                        <a href="#"
+                                                class="btn btn--primary pe-5 ps-5">Get Started</a>
                                 </div>
-                        </div>
-                        <div>
-                                <div class="card product mb-5 mx-auto">
-                                        <div class="position-relative">
-                                                <a href="details/help--my-little-girl-is-growing/37/index.html">
-                                                        <div class="flex- center text-center product-img" style="">
-                                                                <img src="media/products/IMG-20220504-WA0007.jpg"
-                                                                        class="card-img-top" style="">
-                                                        </div>
-                                                </a>
-                                        </div>
-                                        <div class="card-body pe-0 ps-0">
-                                                <h5 class="card-title font-bold product-title-h5" data-toggle="tooltip"
-                                                        title="Help! My Little Girl is Growing">
-                                                        <a href="details/help--my-little-girl-is-growing/37/index.html"
-                                                                class="text-decoration-none product-title">
-                                                                Help! My Little Girl is Growing</a>
-                                                </h5>
-                                                <label class="text-muted">Florence Igboayaka</label>
-                                                <div class="rating-widget">
-                                                        <div class="rating-block">
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="fa fa-star "></span>
-                                                                <span class="ms-2">
-                                                                </span>
-                                                        </div>
-                                                </div>
-                                                <div class="mb-2" style="color: #159500">&#163;4.99</div>
-                                                <div class="d-g rid">
-                                                        <a href="javascript:void(0)" onclick="addToCart('37')"
-                                                                class="btn btn--primary font-regular"><i
-                                                                        class="fa fa-shopping-cart"
-                                                                        style="color: #ffff00a3"></i> Add to cart</a>
-                                                </div>
-                                        </div>
+                     </div>
+
+                   </div>
+                   <div class="col-4 d-flex justify-content-end position-absolute" style="left:120px;">
+                      <img src="media/products/writersblock.png" width="90%" height="90%" alt="" srcset="" style="border-top-right-radius:50px ;">
+                   </div>
+              </div>
+        </div>
+      
+        
+        <form class="form-horizontal d-flex align-items-center justify-content-center" style="
+         background-color:#FFFF;
+         
+           ">
+                <div style="background-color:#FFFF ;
+                     padding: 50px 50px;
+                     width: 50vw;
+                     position: relative;
+                     border-radius:30px;
+                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+                     margin:50px 10px;
+                     
+                     ">
+                     
+                        <fieldset style="
+                         align-items:center;
+                         justify-items: center;
+                         padding-left: 60px;
+                        ">
+                
+                                <!-- Form Name -->
+                                <div style="" >
+                                        <h3 style="font-weight:bold; text-align: center;">Subscribe to our Newsletter</h3>
+                                        <p style="text-align:center ;">Be the first to know about new books,and get free publishing <br> tips to help you as an indie author</p>
                                 </div>
-                        </div>
+                                
+                                <!-- Text input-->
+                                <div class="form-group">
+                                  <label class="col-md-4 control-label" for="textinput"></label>  
+                                  <div class="col-md-5">
+                                  <input style="width:35vw; box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px ;" id="textinput" name="textinput" type="text" placeholder="Name" class="form-control input-md">
+                                    
+                                  </div>
+                                </div>
+                                
+                                <!-- Text input-->
+                                <div class="form-group">
+                                  <label class="col-md-4 control-label" for="textinput"></label>  
+                                  <div class="col-md-5">
+                                  <input style=" width:35vw; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" id="textinput" name="textinput" type="text" placeholder="Email" class="form-control input-md">
+                                    
+                                  </div>
+                                </div>
+                       
+                                 <!-- Button -->
+                                <div class="form-group d-flex align-items-center justify-item-center ">
+                                     <label class="col-md-4 control-label" for="singlebutton"></label>
+                                  <div class="col-md-4">
+                                     <button id="singlebutton" name="singlebutton" class="btn btn--primary">SUBSCRIBE</button>
+                                  </div>
+                              </div>
+                      
+                            </fieldset>
                 </div>
-        </div>
-        <div class="container-fluid p-0 m-0">
-                <div class="row no-gutters">
-                        <div class="col-4">
-                                <img src="static/store/images/shelf-left.png" loading="lazy" class="w-100" />
-                        </div>
-                        <div class="col-4 text-center d-flex align-items-center justify-content-center" loading="lazy">
-                                <a href="writing-academy/index.html">
-                                        <img src="static/store/images/want-to-write.png" style="max-width: 100%;"
-                                                loading="lazy" />
-                                </a>
-                        </div>
-                        <div class="col-4">
-                                <img src="static/store/images/shelf-right.png" class="w-100" loading="lazy" />
-                        </div>
-                </div>
-        </div>
+      </form>
+       
+       
+       
         <div id="content-loader" class="text-center" style="display: none;">
                 <div style="display: flex; justify-content: center; align-items: center">
                         <img src="static/store/loader/loader7.gif" />
@@ -1810,48 +1107,44 @@
                         </div>
                 </div>
         </div>
-        <footer class="nb-footer bg--white pt-5 mt-5">
+        <footer class="nb-footer  pt-5 mt-5" style="background-color: #22BBC9;">
                 <div class="container">
                         <div class="row">
                                 <div class="col-md-3 col-sm-6">
                                         <div class="footer-info-single overflow-hidden ">
-                                                <a href="index.html" class="text--success mb-4 d-block">
+                                                <a href="index.html" class="text-white mb-4 d-block">
                                                         <img src="static/store/logo/logo.png"
-                                                                style="max-width: 150px" />
+                                                                style="max-width: 150px; background-color:white ;" />
                                                 </a>
-                                                <ul class="list-inline" style="font-size: small;">
-                                                        <li><a href="cdn-cgi/l/email-protection.html#dcb5b2bab39cbea9aebbb9b3b2aca9beb0b5afb4b5b2bbf2bfb3b1"
-                                                                        title="" class="white-space-nowrap"><i
-                                                                                class="fa fa-envelope"></i> <span
-                                                                                class="__cf_email__"
-                                                                                data-cfemail="3e575058517e5c4b4c595b51504e4b5c52574d56575059105d5153">[email&#160;protected]</span></a>
-                                                        </li>
-                                                        <li class="d-none"><a href="#" title=""
-                                                                        class="white-space-nowrap"><i
-                                                                                class="fa fa-phone"></i> </a></li>
-                                                        <li><a href="#" title="" class="white-space-nowrap"><i
-                                                                                class="fa fa-map-marker"></i> Aberdeen,
-                                                                        UK</a></li>
-                                                </ul>
-                                        </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6">
-                                        <div class="footer-info-single">
-                                                <h2 class="title">Get in Touch</h2>
-                                                <ul class="list-unstyled">
+                                                <ul class="list-inline text--white" style="font-size: small;">
                                                         <li><a href="about-us/index.html" title="">About Us</a></li>
-                                                        <li><a href="support/index.html" title="">Support</a></li>
+                                                        <li><a href="support/index.html" title="">Contact Us</a></li>
+                                                        <li><a href="support/index.html" title="">Publish</a></li>
                                                         <li><a href="support/index.html">FAQ</a></li>
-                                                        <li><a href="tnc/index.html" title="">Terms And Conditions</a>
-                                                        </li>
-                                                        <li><a href="privacy-policy/index.html" title="">Privacy
-                                                                        Policy</a></li>
+                                                       
+                                                        
                                                 </ul>
                                         </div>
                                 </div>
                                 <div class="col-md-3 col-sm-6">
-                                        <div class="footer-info-single">
-                                                <h2 class="title">Book Formats</h2>
+                                        <div class="footer-info-single text--white">
+                                                <h2 class="title">Categories</h2>
+                                                <ul class="list-unstyled">
+                                                        <li><a href="category/Audio-Books/index.html" title="">Book Writing</a></li>
+                                                <li><a href="category/eBooks/index.html" title="">Girls & Women</a>
+                                                </li>
+                                                <li><a href="category/Paper-Backs/index.html"
+                                                                title="">Self Help</a></li>
+                                                <li><a href="category/Free-Books/index.html" title="">Bussiness & Money</a></li>
+                                                <li><a href="category/Pre-Orders/index.html"
+                                                                title="">Teens & Young Adult</a></li>
+                                                <li><a href="#" title="">Religion</a></li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                        <div class="footer-info-single text--white">
+                                                <h2 class="title">Useful Links</h2>
                                                 <ul class="list-unstyled">
                                                         <li><a href="category/Audio-Books/index.html" title="">Audio
                                                                         Books</a></li>
@@ -1859,43 +1152,44 @@
                                                         </li>
                                                         <li><a href="category/Paper-Backs/index.html"
                                                                         title="">Paperbacks</a></li>
-                                                        <li><a href="category/Free-Books/index.html" title="">Free
-                                                                        Books</a></li>
                                                         <li><a href="category/Pre-Orders/index.html"
                                                                         title="">Pre-Order</a></li>
-                                                        <li><a href="#" title="">Writing Academy</a></li>
                                                 </ul>
                                         </div>
                                 </div>
                                 <div class="col-md-3 col-sm-6">
-                                        <div class="footer-info-single">
+                                        <div class="footer-info-single text--white">
                                                 <h2 class="title">Other Links</h2>
                                                 <ul class="list-unstyled">
-                                                        <li><a href="author/products/addnew/index.html" title="">Self
-                                                                        Publish</a></li>
-                                                        <li><a href="support/index.html" title="">Get Help</a></li>
+                                                        <li><a href="tnc/index.html" title="">Terms And Conditions</a>
+                                                        </li>
+                                                        <li><a href="privacy-policy/index.html" title="">Privacy
+                                                                        Policy</a></li>
 
                                                 </ul>
+                                                <span class="float-sm-center d-block d-sm-inline">
+                                                        <a href="#" title="" class="ps-2 pe-2"><i
+                                                                        class="fa fa-instagram"></i></a>
+                                                        <a href="#" title="" class="ps-2 pe-2"><i
+                                                                        class="fa fa-facebook"></i></a>
+                                                        <a href="#" title="" class="ps-2 pe-2"><i class="fa fa-twitter"></i></a>
+                                                        <a href="#" title="" class="ps-2 pe-2"><i
+                                                                        class="fa fa-linkedin"></i></a>
+                                                </span>
                                         </div>
                                 </div>
                         </div>
-                </div>
-                <div class="mega-menu-footer bg-dark text-light pt-4 pb-4">
-                        <div class="container clearfix">
-                                <p class="mb-0 text-center text-sm-left">Burgeon Publishing <span
-                                                class="text--primary">&copy;</span> - All rights reserved
-                                        <span class="float-sm-end d-block d-sm-inline">
-                                                <a href="#" title="" class="ps-2 pe-2"><i
-                                                                class="fa fa-instagram"></i></a>
-                                                <a href="#" title="" class="ps-2 pe-2"><i
-                                                                class="fa fa-facebook"></i></a>
-                                                <a href="#" title="" class="ps-2 pe-2"><i class="fa fa-twitter"></i></a>
-                                                <a href="#" title="" class="ps-2 pe-2"><i
-                                                                class="fa fa-linkedin"></i></a>
-                                        </span>
-                                </p>
+
+                        <div class="mega-menu-footer  text-light pt-4 pb-4">
+                                <div class="container clearfix">
+                                        <p class="mb-0 text-center text-sm-left"> Copyright <span
+                                                class="text-white">&copy;</span> 2022 Burgeon Publishing  - All rights reserved
+                                                
+                                        </p>
+                                </div>
                         </div>
                 </div>
+                
         </footer>
         <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
